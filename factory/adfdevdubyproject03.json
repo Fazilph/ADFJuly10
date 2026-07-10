@@ -1,0 +1,15 @@
+{
+	"name": "adfdevdubyproject03",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "90d6fdd8-d24e-47b8-8d68-3ba1025c44f5",
+		"tenantId": "afd5b875-794a-468e-86ee-03b2772387a5"
+	}
+}
