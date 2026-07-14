@@ -1,0 +1,26 @@
+{
+	"name": "Binary3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sourcefile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().sourcefile",
+					"type": "Expression"
+				},
+				"container": "files"
+			}
+		}
+	}
+}
