@@ -25,20 +25,20 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "DS_LKUP_MAX_VALUE",
+						"referenceName": "DS_LKUP_MAX_VALUE_NEW",
 						"type": "DatasetReference",
 						"parameters": {
 							"tablename": {
 								"value": "@pipeline().parameters.TableName",
 								"type": "Expression"
 							},
-							"schemaname": {
+							"tableschema": {
 								"value": "@pipeline().parameters.TableSchema",
 								"type": "Expression"
 							}
 						}
 					},
-					"firstRowOnly": false
+					"firstRowOnly": true
 				}
 			},
 			{
@@ -102,14 +102,14 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "DS_LKUP_MAX_VALUE",
+									"referenceName": "DS_LKUP_MAX_VALUE_NEW",
 									"type": "DatasetReference",
 									"parameters": {
 										"tablename": {
 											"value": "@pipeline().parameters.TableName",
 											"type": "Expression"
 										},
-										"schemaname": {
+										"tableschema": {
 											"value": "@pipeline().parameters.TableSchema",
 											"type": "Expression"
 										}

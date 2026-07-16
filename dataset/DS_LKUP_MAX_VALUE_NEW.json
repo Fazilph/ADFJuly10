@@ -1,0 +1,30 @@
+{
+	"name": "DS_LKUP_MAX_VALUE_NEW",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_SERVER_NEW",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			},
+			"tableschema": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().tableschema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	}
+}
